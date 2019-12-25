@@ -17,7 +17,14 @@ public class DeptConsumerConteoller {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String REST_URL_PREFIX="http://localhost:8001";
+    /**
+    *   非负载均衡模式
+    * */
+//    private static final String REST_URL_PREFIX="http://localhost:8001";
+    /**
+    *   Ribbon负载均衡模式访问
+    * */
+    private static final String REST_URL_PREFIX="http://SPRINGCLOUD-PROVIDER-DEPT";
 
     @RequestMapping("consumer/dept/list")
     public List<Dept> list(){

@@ -4,9 +4,12 @@ server:
 #Eureka设置
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka7001.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #单机形式
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #集群配置
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/

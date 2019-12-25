@@ -13,6 +13,7 @@
 
     <dependencies>
 
+        <!--eureka相关依赖-->
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -20,8 +21,11 @@
             <version>1.4.6.RELEASE</version>
         </dependency>
 
-
-
+        <!--监控信息-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 
         <!--完成业务逻辑，必须先拿到实体类-->
         <dependency>

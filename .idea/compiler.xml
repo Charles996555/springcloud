@@ -7,10 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-api" />
+        <module name="springcloud-consumer-dept-feign" />
         <module name="springcloud-provider-dept-8001" />
+        <module name="springcloud-provider-dept-8002" />
+        <module name="springcloud-provider-dept-8003" />
         <module name="springcloudapi" />
         <module name="springcloudconsumerdept80" />
         <module name="springcloudeureka7001" />
+        <module name="springcloudeureka7002" />
+        <module name="springcloudeureka7003" />
         <module name="springcloudproviderdept8001" />
       </profile>
     </annotationProcessing>
